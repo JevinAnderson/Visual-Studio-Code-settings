@@ -1,0 +1,53 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "bookmarks.navigateThroughAllFiles": true,
+  "bookmarks.saveBookmarksBetweenSessions": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "files.associations": {
+    "*.asp": "vb"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "typescript.check.tscVersion": false,
+  "window.zoomLevel": 0,
+  "cSpell.enabledLanguageIds": [
+    "csharp",
+    "go",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "php",
+    "plaintext",
+    "python",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
+  "cSpell.userWords": [
+    "onloadend",
+    "onload"
+  ],
+  "workbench.iconTheme": "vs-seti",
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.cssEnable": [
+    "css",
+    "less",
+    "sass",
+    "scss"
+  ],
+  "prettier.tabWidth": 2
+}
