@@ -1,0 +1,8 @@
+Bookmarks
+https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
+
+Code Spellchecker
+https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+
+Prettier
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
