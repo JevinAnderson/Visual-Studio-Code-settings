@@ -5,13 +5,6 @@
 	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
 	 // Example:
 */
-  "Localize": {
-    "prefix": "localize",
-    "body": [
-      "localizer.get('${1:Message}')$2"
-    ],
-    "description": "Localize variables"
-  },
   "Print to console": {
     "prefix": "logVariable",
     "body": [
@@ -36,26 +29,27 @@
     "description": "Make a function in a javascript object"
   },
   "Classic Component": {
-    "prefix": "React Component extends React.Component",
+    "prefix": "ccomp",
     "body": [
       "import React, { Component } from 'react';",
-      "import PropTypes from 'prop-types",
+      "import PropTypes from 'prop-types';",
       "",
       "class ${1:Name of Component} extends Component {",
       "  constructor(props) {",
       "    super(props);",
+      "",
       "    this.state = {};",
       "  }",
       "  // componentWillMount(){}",
       "  // componentDidMount(){}",
       "  // componentWillReceiveProps(nextProps) {}",
-      "  // shouldComponentUpdate(nextProps, nextState) true",
+      "  // shouldComponentUpdate(nextProps, nextState) { return true; }",
       "  // componentWillUpdate(nextProps, nextState) {}",
       "  // componentDidUpdate(prevProps, prevState) {}",
       "  // componentWillUnmount() {}",
       "  render() {",
       "    return (",
-      "      <div>",
+      "      <div className=\"${2:Component Class}\">",
       "      </div>",
       "    );",
       "  }",
@@ -65,46 +59,13 @@
       "",
       "${1:Name of Component}.defaultProps = {};",
       "",
-      "export default ${1:Name of Component};$2",
-      ""
-    ],
-    "description": "Classic react component created with the react create class method."
-  },
-  "Classic Component From Create Class": {
-    "prefix": "React Component React.CreateClass",
-    "body": [
-      "import React from 'react';",
-      "",
-      "const ${1:Name of Component} = React.createClass({",
-      "  propTypes: {",
-      "  },",
-      "// displayName: \"\",",
-      "// mixins: [],",
-      "// statics: {},",
-      "// getInitialState: () => Object.assign({}),",
-      "// getDefaultProps: () => Object.assign({}),",
-      "// componentWillMount: () => {},",
-      "// componentDidMount: () => {},",
-      "// componentWillReceiveProps: (nextProps) => {},",
-      "// shouldComponentUpdate: (nextProps, nextState) => true,",
-      "// componentWillUpdate: (nextProps, nextState) => {},",
-      "// componentDidUpdate: (prevProps, prevState) => {},",
-      "// componentWillUnmount: ()=>{},",
-      "  render: function() {",
-      "    return (",
-      "      <div>",
-      "      </div>",
-      "    );",
-      "  }",
-      "});",
-      "",
-      "export default ${1:Name of Component};$2",
+      "export default ${1:Name of Component};$3",
       ""
     ],
     "description": "Classic react component created with the react create class method."
   },
   "Pure Component": {
-    "prefix": "Pure component extends React.PureComponent",
+    "prefix": "pcomp",
     "body": [
       "import React, { PureComponent } from 'react';",
       "import PropTypes from 'prop-types';",
@@ -118,13 +79,13 @@
       "  // componentWillMount(){}",
       "  // componentDidMount(){}",
       "  // componentWillReceiveProps(nextProps) {}",
-      "  // shouldComponentUpdate(nextProps, nextState) true",
+      "  // shouldComponentUpdate(nextProps, nextState) { return true; }",
       "  // componentWillUpdate(nextProps, nextState) {}",
       "  // componentDidUpdate(prevProps, prevState) {}",
       "  // componentWillUnmount() {}",
       "  render() {",
       "    return (",
-      "      <div className=\"${2:Component Class}-component\">",
+      "      <div className=\"${2:Component Class}\">",
       "      </div>",
       "    );",
       "  }",
@@ -138,5 +99,27 @@
       ""
     ],
     "description": "React Pure Component for rendering optimizations"
+  },
+  "Functional Component": {
+    "prefix": "fcomp",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "const ${1:Name} = props => {",
+      "  return (",
+      "    <div className=\"${2:Component Class}\">",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "${1:Name}.propTypes = {};",
+      "",
+      "${1:Name}.defaultProps = {};",
+      "",
+      "export default ${1:Name};$3",
+      ""
+    ],
+    "description": "React Functional Component"
   }
 }
