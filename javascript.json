@@ -19,6 +19,13 @@
 		],
 		"description": "Log output to console"
 	},
+	"Print to Node Console with pretty color": {
+		"prefix": "nlog",
+		"body": [
+			"console.log('\\x1b[${1|30m,31m,32m,33m,34m,35m,36m,37m|}%s\\x1b[0m', `${2:Message}  ${${variable}}`);"
+		],
+		"description": "Black:30m,Red:31m,Green:32m,Yellow:33m,Blue:34m,Magenta:35m,Cyan:36m,White:37m"
+	},
 	"Classic Component": {
 		"prefix": "ccomp",
 		"body": [
