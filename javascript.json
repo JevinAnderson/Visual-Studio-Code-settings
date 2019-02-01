@@ -1,118 +1,150 @@
 {
-  /*
+	/*
 	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and
 	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
 	 // Example:
 */
-  "Print to console": {
-    "prefix": "logVariable",
-    "body": [
-      "console.log('${2:Console Message} ${1:Variable to Log}', ${1}); $3"
-    ],
-    "description": "Log output to console"
-  },
-  "Print to console with pretty color": {
-    "prefix": "logColor",
-    "body": [
-      "console.log('%c${2:Console Message} ${1:Variable to Log}', 'color:${3:red}', ${1}); $4"
-    ],
-    "description": "Log output to console"
-  },
-  "Classic Component": {
-    "prefix": "ccomp",
-    "body": [
-      "import React, { Component } from 'react';",
-      "import PropTypes from 'prop-types';",
-      "",
-      "class ${1:Name of Component} extends Component {",
-      "  state = {};",
-      "",
-      "  // constructor(props) {}",
-      "  // componentWillMount(){} // will be deprecated",
-      "  // componentDidMount(){}",
-      "  // componentWillReceiveProps(nextProps) {} // will be deprecated",
-      "  // static getDerivedStateFromProps(nextProps, prevState) {}",
-      "  // shouldComponentUpdate(nextProps, nextState) { return true; }",
-      "  // componentWillUpdate(nextProps, nextState) {} // will be deprecated",
-      "  // getSnapshotBeforeUpdate(prevProps, prevState) {}",
-      "  // componentDidUpdate(prevProps, prevState, snapshot) {}",
-      "  // componentWillUnmount() {}",
-      "  // componentDidCatch(error, info) {}",
-      "",
-      "  render() {",
-      "    return (",
-      "      <div className=\"${2:Component Class}\">",
-      "      </div>",
-      "    );",
-      "  }",
-      "",
-      "  static propTypes = {}",
-      "",
-      "  static defaultProps = {}",
-      "}",
-      "",
-      "export default ${1:Name of Component};$3",
-      ""
-    ],
-    "description": "Classic react component created with the react create class method."
-  },
-  "Pure Component": {
-    "prefix": "pcomp",
-    "body": [
-      "import React, { PureComponent } from 'react';",
-      "import PropTypes from 'prop-types';",
-      "",
-      "class ${1:Name of PureComponent} extends PureComponent {",
-      "  state = {};",
-      "",
-      "  // constructor(props) {}",
-      "  // componentWillMount(){} // will be deprecated",
-      "  // componentDidMount(){}",
-      "  // componentWillReceiveProps(nextProps) {} // will be deprecated",
-      "  // static getDerivedStateFromProps(nextProps, prevState) {}",
-      "  // shouldComponentUpdate(nextProps, nextState) { return true; }",
-      "  // componentWillUpdate(nextProps, nextState) {} // will be deprecated",
-      "  // getSnapshotBeforeUpdate(prevProps, prevState) {}",
-      "  // componentDidUpdate(prevProps, prevState, snapshot) {}",
-      "  // componentWillUnmount() {}",
-      "  // componentDidCatch(error, info) {}",
-      "",
-      "  render() {",
-      "    return (",
-      "      <div className=\"${2:Component Class}\">",
-      "      </div>",
-      "    );",
-      "  }",
-      "",
-      "  static propTypes = {}",
-      "",
-      "  static defaultProps = {}",
-      "}",
-      "",
-      "export default ${1:Name of Component};$3",
-      ""
-    ],
-    "description": "React Pure Component for rendering optimizations"
-  },
-  "Functional Component": {
-    "prefix": "fcomp",
-    "body": [
-      "import React from 'react';",
-      "import PropTypes from 'prop-types';",
-      "",
-      "const ${1:Name} = props => (",
-      "  <div className=\"${2:Component Class}\">",
-      "  </div>",
-      ");",
-      "",
-      "${1:Name}.propTypes = {};",
-      "",
-      "${1:Name}.defaultProps = {};",
-      "",
-      "export default ${1:Name};$3",
-      ""
-    ],
-    "description": "React Functional Component"
-  }
+	"Print to console": {
+		"prefix": "logVariable",
+		"body": [
+			"console.log('${2:Console Message} ${1:Variable to Log}', ${1}); $3"
+		],
+		"description": "Log output to console"
+	},
+	"Print to console with pretty color": {
+		"prefix": "logColor",
+		"body": [
+			"console.log('%c${2:Console Message} ${1:Variable to Log}', 'color:${3:red}', ${1}); $4"
+		],
+		"description": "Log output to console"
+	},
+	"Classic Component": {
+		"prefix": "ccomp",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"class ${1:Name of Component} extends Component {",
+			"  state = {};",
+			"",
+			"  // constructor(props) {}",
+			"  // componentWillMount(){} // will be deprecated",
+			"  // componentDidMount(){}",
+			"  // componentWillReceiveProps(nextProps) {} // will be deprecated",
+			"  // static getDerivedStateFromProps(nextProps, prevState) {}",
+			"  // shouldComponentUpdate(nextProps, nextState) { return true; }",
+			"  // componentWillUpdate(nextProps, nextState) {} // will be deprecated",
+			"  // getSnapshotBeforeUpdate(prevProps, prevState) {}",
+			"  // componentDidUpdate(prevProps, prevState, snapshot) {}",
+			"  // componentWillUnmount() {}",
+			"  // componentDidCatch(error, info) {}",
+			"",
+			"  render() {",
+			"    return (",
+			"      <div className=\"${2:Component Class}\">",
+			"      </div>",
+			"    );",
+			"  }",
+			"",
+			"  static propTypes = {}",
+			"",
+			"  static defaultProps = {}",
+			"}",
+			"",
+			"export default ${1:Name of Component};$3",
+			""
+		],
+		"description": "Classic react component created with the react create class method."
+	},
+	"Pure Component": {
+		"prefix": "pcomp",
+		"body": [
+			"import React, { PureComponent } from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"class ${1:Name of PureComponent} extends PureComponent {",
+			"  state = {};",
+			"",
+			"  // constructor(props) {}",
+			"  // componentWillMount(){} // will be deprecated",
+			"  // componentDidMount(){}",
+			"  // componentWillReceiveProps(nextProps) {} // will be deprecated",
+			"  // static getDerivedStateFromProps(nextProps, prevState) {}",
+			"  // shouldComponentUpdate(nextProps, nextState) { return true; }",
+			"  // componentWillUpdate(nextProps, nextState) {} // will be deprecated",
+			"  // getSnapshotBeforeUpdate(prevProps, prevState) {}",
+			"  // componentDidUpdate(prevProps, prevState, snapshot) {}",
+			"  // componentWillUnmount() {}",
+			"  // componentDidCatch(error, info) {}",
+			"",
+			"  render() {",
+			"    return (",
+			"      <div className=\"${2:Component Class}\">",
+			"      </div>",
+			"    );",
+			"  }",
+			"",
+			"  static propTypes = {}",
+			"",
+			"  static defaultProps = {}",
+			"}",
+			"",
+			"export default ${1:Name of Component};$3",
+			""
+		],
+		"description": "React Pure Component for rendering optimizations"
+	},
+	"Functional Component": {
+		"prefix": "fcomp",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const ${1:Name} = props => (",
+			"  <div className=\"${2:Component Class}\">",
+			"  </div>",
+			");",
+			"",
+			"${1:Name}.propTypes = {};",
+			"",
+			"${1:Name}.defaultProps = {};",
+			"",
+			"export default ${1:Name};$3",
+			""
+		],
+		"description": "React Functional Component"
+	},
+	"Jest Unit Test": {
+		"prefix": "jtest",
+		"body": [
+			"import React from 'react'",
+			"import Adapter from 'enzyme-adapter-react-16'",
+			"import { configure, mount } from 'enzyme'",
+			"",
+			"configure({ adapter: new Adapter() })",
+			"",
+			"beforeAll(() => {})",
+			"beforeEach(() => {})",
+			"afterEach(() => {})",
+			"afterAll(() => {})",
+			"",
+			"const Example = props => (",
+			"  <div className=\"example-component\">",
+			"    <pre data-selector=\"stringify\">{JSON.stringify(props, null, 2)}</pre>",
+			"  </div>",
+			")",
+			"",
+			"test('${1:Test Description}', () => {",
+			"  const props = { test: 'Props' }",
+			"  const stringified = JSON.stringify(props, null, 2)",
+			"",
+			"  const wrapper = mount(<Example {...props} />)",
+			"  const node = wrapper.find('[data-selector=\"stringify\"]')",
+			"",
+			"  expect(node.text()).toBe(stringified)",
+			"})",
+			""
+		]
+	}
 }
