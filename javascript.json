@@ -122,6 +122,28 @@
 		],
 		"description": "React Functional Component"
 	},
+	"Functional Component With Hooks": {
+		"prefix": "hcomp",
+		"body": [
+			"import React, { useState, useEffect } from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const ${1:Name} = props => {",
+			"  return (",
+			"    <div className=\"${2:Component Class}\">",
+			"    </div>",
+			"  );",
+			"}",
+			"",
+			"${1:Name}.propTypes = {};",
+			"",
+			"${1:Name}.defaultProps = {};",
+			"",
+			"export default ${1:Name};$3",
+			""
+		],
+		"description": "React Functional Component"
+	},
 	"Jest Unit Test": {
 		"prefix": "jtest",
 		"body": [
